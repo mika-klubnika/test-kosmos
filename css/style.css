@@ -713,7 +713,18 @@ img {
 
 /* -----------------------Модальное окно ------------------*/
 .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
   display: none;
+  width: 472px;
+
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: var(--solitude);
+  box-shadow: var(--box-shadow);
 }
 
 .modal.is-active {
@@ -722,32 +733,9 @@ img {
   animation: fade-in 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.modal__base {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  min-height: 100vh;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
 .modal__wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-
   display: grid;
   grid-template-columns: 80px 1fr;
-
-  width: 472px;
-
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background-color: var(--solitude);
-  box-shadow: var(--box-shadow);
 }
 
 .modal__bg {
@@ -1160,8 +1148,11 @@ img {
     width: 190px;
   }
 
-  .modal__wrapper {
+  .modal {
     width: 350px;
+  }
+
+  .modal__wrapper {
     grid-template-columns: 46px 1fr;
   }
 
