@@ -9,3 +9,5 @@
 - Показ подменю при наведении на "каталог"
 - Телефоны и почта должны быть кликабельными
 - *Посадить все на wordpress
+
+### Ссылка на github pages: https://mika-klubnika.github.io/test-kosmos/
