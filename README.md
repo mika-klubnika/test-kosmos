@@ -10,4 +10,4 @@
 - Телефоны и почта должны быть кликабельными
 - *Посадить все на wordpress
 
-### Ссылка на github pages: https://mika-klubnika.github.io/test-kosmos/
+#### Ссылка на github pages: https://mika-klubnika.github.io/test-kosmos/
